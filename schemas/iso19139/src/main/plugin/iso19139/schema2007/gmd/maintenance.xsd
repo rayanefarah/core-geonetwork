@@ -25,12 +25,16 @@
 					<xs:element name="updateScope" type="gmd:MD_ScopeCode_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="updateScopeDescription" type="gmd:MD_ScopeDescription_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
 					<xs:element name="maintenanceNote" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="maintenanceNote" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="maintenanceNote" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+
 					<xs:element name="contact" type="gmd:CI_ResponsibleParty_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<!-- ........................................................................ -->
+
 	<xs:element name="MD_MaintenanceInformation" type="gmd:MD_MaintenanceInformation_Type"/>
 	<!-- ........................................................................ -->
 	<xs:complexType name="MD_MaintenanceInformation_PropertyType">

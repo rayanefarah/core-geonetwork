@@ -48,14 +48,17 @@
   <xml>XML</xml>
   <metadata>Métadonnées</metadata>
   <identificationInfo>Identification</identificationInfo>
-  <distributionInfo>Distribution</distributionInfo>
-  <dataQualityInfo>Qualité</dataQualityInfo>
-  <spatialRepresentationInfo>Information spatiale</spatialRepresentationInfo>
+  <distributionInfo>Infos</distributionInfo>
+  <dataQualityInfo>Atouts</dataQualityInfo>
+  <spatialRepresentationInfo>Menaces</spatialRepresentationInfo>
   <referenceSystemInfo>Système de réf.</referenceSystemInfo>
   <contentInfo>Contenu</contentInfo>
   <portrayalCatalogueInfo>Représentation</portrayalCatalogueInfo>
   <metadataConstraints>Md. contraintes</metadataConstraints>
   <metadataMaintenance>Md. maintenance</metadataMaintenance>
+  <metadataAtouts>Atouts</metadataAtouts>
+  <metadataMenaces>Menaces</metadataMenaces>
+  <metadataInfos>Infos Génerales</metadataInfos>
   <applicationSchemaInfo>Extension</applicationSchemaInfo>
   <noThesaurusName>Mots clés</noThesaurusName>
   <bboxesSection>Zone géographique</bboxesSection>

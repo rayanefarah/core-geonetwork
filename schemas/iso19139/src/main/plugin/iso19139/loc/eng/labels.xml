@@ -183,9 +183,8 @@
     </description>
   </element>
   <element name="gmd:DQ_DataQuality" id="78.0">
-    <label>Data quality</label>
-    <description>Quality information for the data specified by a data quality
-      scope
+    <label>Atouts Environnementaux</label>
+    <description>
     </description>
   </element>
   <element name="gmd:DQ_DomainConsistency" id="113.0">
@@ -491,6 +490,11 @@
     <label>Metadata</label>
     <abbrLabel>Metadata</abbrLabel>
     <description>Root entity which defines metadata about a resource or resources</description>
+  </element>
+  <element name="gmd:D_Data" id="1.0">
+    <label>Diane data</label>
+    <abbrLabel>Metadata</abbrLabel>
+    <description>Root entity which defines data about a resource or resources</description>
   </element>
   <element name="gmd:MD_MetadataExtensionInformation" id="303.0">
     <description>Information describing metadata extensions</description>
@@ -894,9 +898,9 @@
     <description>Recognition of those who contributed to the resource(s)</description>
   </element>
   <element name="gmd:dataQualityInfo" id="18.0">
-    <label>Data quality info</label>
-    <abbrLabel>Data Quality</abbrLabel>
-    <description>Provides overall assessment of quality of a resource(s)</description>
+    <label>Atouts Environnementaux</label>
+    <abbrLabel></abbrLabel>
+    <description></description>
   </element>
   <element name="gmd:dataSetURI" id="11.1">
     <label>Dataset URI</label>
@@ -1146,11 +1150,10 @@
     </description>
   </element>
   <element name="gmd:distributionInfo" id="17.0">
-    <description>Provides information about the distributor of and options for obtaining the
-      resource(s)
+    <description>
     </description>
-    <label>Distribution Information</label>
-    <abbrLabel>Distribution</abbrLabel>
+    <label>Informations générales</label>
+    <abbrLabel></abbrLabel>
   </element>
   <element name="gmd:distributionOrderProcess" id="281.0">
     <label>Distribution / Order Process</label>
@@ -2506,9 +2509,9 @@
     <condition>mandatory</condition>
   </element>
   <element name="gmd:spatialRepresentationInfo" id="12.0">
-    <label>Spatial representation info</label>
-    <abbrLabel>Spatial Repr.</abbrLabel>
-    <description>Digital representation of spatial information in the dataset</description>
+    <label>Menaces environnementales</label>
+    <abbrLabel></abbrLabel>
+    <description></description>
   </element>
   <element name="gmd:spatialRepresentationType" id="37.0">
     <label>Spatial representation type</label>
@@ -3555,4 +3558,944 @@
     <label>Link</label>
     <description>Link type</description>
   </element>
+  <element name="gmd:metadataAtouts" id="1000.0">
+    <label>Atouts</label>
+    <abbrLabel>Atouts</abbrLabel>
+    <description>Atouts de la ville
+    </description>
+  </element>
+
+  <element name="gmd:metadataInfos" id="1001.0">
+    <label>Information générales</label>
+    <abbrLabel>Infos</abbrLabel>
+    <description>Infos
+    </description>
+
+  </element>
+
+  <element name="gmd:metadataMenaces" id="1002.0">
+    <label>Menaces</label>
+    <abbrLabel>Menaces</abbrLabel>
+    <description>Menaces
+    </description>
+    
+  </element>
+ 
+  <element name="gmd:geologie" id="1003.0">
+    <label>Géologie</label>
+    <abbrLabel>Geologie</abbrLabel>
+    <description>Geologie
+    </description>
+   
+  </element>
+
+  <element name="gmd:hydrogeologie" id="1004.0">
+    <label>Hydrogéologie</label>
+    <abbrLabel>Hydrogeologie</abbrLabel>
+    <description>Hydrogeologie
+    </description>
+   
+
+  </element>
+  
+  <element name="gmd:agriculture" id="1005.0">
+    <label>Agriculture</label>
+    <abbrLabel>Agriculture</abbrLabel>
+    <description>Agriculture
+    </description>
+   
+
+  </element>
+
+
+
+
+ 
+  <element name="gmd:paysage" id="1006.0">
+    <label>Paysage</label>
+    <abbrLabel>Paysage</abbrLabel>
+    <description>Paysage
+    </description>
+   
+  </element>
+
+  <element name="gmd:ecologie" id="1007.0">
+    <label>Ecologie</label>
+    <abbrLabel>Ecologie</abbrLabel>
+    <description>Ecologie
+    </description>
+  
+  </element>
+
+  <element name="gmd:patrimoine" id="1008.0">
+    <label>Patrimoine Culturel</label>
+    <abbrLabel>Patrimoine Culturel</abbrLabel>
+    <description>Patrimoine Culturel
+    </description>
+
+  </element>
+
+  <element name="gmd:geologieA" id="2003.0">
+    <label>Géologie</label>
+    <abbrLabel>Geologie</abbrLabel>
+    <description>Geologie
+    </description>
+   
+  </element>
+
+  <element name="gmd:hydrogeologieA" id="2004.0">
+    <label>Hydrogéologie</label>
+    <abbrLabel>Hydrogeologie</abbrLabel>
+    <description>Hydrogeologie
+    </description>
+   
+
+  </element>
+  
+  <element name="gmd:agricultureA" id="2005.0">
+    <label>Agriculture</label>
+    <abbrLabel>Agriculture</abbrLabel>
+    <description>Agriculture
+    </description>
+   
+
+  </element>
+
+
+
+
+ 
+  <element name="gmd:paysageA" id="2006.0">
+    <label>Paysage</label>
+    <abbrLabel>Paysage</abbrLabel>
+    <description>Paysage
+    </description>
+   
+  </element>
+
+  <element name="gmd:ecologieA" id="2007.0">
+    <label>Ecologie</label>
+    <abbrLabel>Ecologie</abbrLabel>
+    <description>Ecologie
+    </description>
+  
+  </element>
+
+  <element name="gmd:patrimoineA" id="2008.0">
+    <label>Patrimoine Culturel</label>
+    <abbrLabel>Patrimoine Culturel</abbrLabel>
+    <description>Patrimoine Culturel
+    </description>
+
+  </element>
+
+  <element name="gmd:pollind" id="1009.0">
+    <label>Pollution industrielle</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:pollhyd" id="1010.0">
+    <label>Pollution hydrique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:carriere" id="1011.0">
+    <label>Carrière</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:destruction" id="1012.0">
+    <label>Destruction d'affleurement</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:ravageuse" id="1013.0">
+    <label>Espèce ravageuse</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:pesticide" id="1014.0">
+    <label>Pesticide</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+
+  <element name="gmd:extension" id="1015.0">
+    <label>EXtension de la zone urbaine</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:chasse" id="1016.0">
+    <label>Chasse</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:invasive" id="1017.0">
+    <label>Espèce invasive</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Menaces" id="1018.0">
+    <label>Menaces</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Hydrogeologie" id="1019.0">
+    <label>Hydrogéologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Geologie" id="1020.0">
+    <label>Géologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Ecologie" id="1021.0">
+    <label>Ecologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_PatrimoineCulturel" id="1022.0">
+    <label>Patrimoine Culturel</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Paysage" id="1023.0">
+    <label>Paysage</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Agriculture" id="1024.0">
+    <label>Agriculture</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+
+
+
+
+  <element name="gmd:MD_Atouts" id="2018.0">
+    <label>Atouts</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_HydrogeologieA" id="2019.0">
+    <label>Hydrogéologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_GeologieA" id="2020.0">
+    <label>Géologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_EcologieA" id="2021.0">
+    <label>Ecologie</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_PatrimoineCulturelA" id="2022.0">
+    <label>Patrimoine Culturel</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_PaysageA" id="2023.0">
+    <label>Paysage</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_AgricultureA" id="2024.0">
+    <label>Agriculture</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+
+
+
+  <element name="gmd:MD_Social" id="1025.0">
+    <label>Social Environnemental</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:MD_Projets" id="1054.0">
+    <label>Projets</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:social" id="1026.0">
+    <label>Social Environnemental</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:projets" id="1027.0">
+    <label>Projets</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:fossile" id="1028.0">
+    <label>Fossile</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:gouffre" id="1029.0">
+    <label>Gouffre</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:grotte" id="1030.0">
+    <label>Grotte</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:montagne" id="1031.0">
+    <label>Montagne</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:colline" id="1032.0">
+    <label>Colline</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:structuregeo" id="1033.0">
+    <label>Structure géologique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:phenomenegeo" id="1034.0">
+    <label>Phénomène géologique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+   
+
+  </element>
+
+  <element name="gmd:faille" id="1035.0">
+    <label>Faille</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:sourcenaturelle" id="1036.0">
+    <label>Source naturelle</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+
+  </element>
+
+  <element name="gmd:riviere" id="1037.0">
+    <label>Rivière</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+ 
+  <element name="gmd:lac" id="1038.0">
+    <label>Lac</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  
+  <element name="gmd:etang" id="1039.0">
+    <label>Etang</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:marecageuse" id="1040.0">
+    <label>Zone marécageuse</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:puits" id="1041.0">
+    <label>Puits</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+
+  <element name="gmd:terrainagricole" id="1042.0">
+    <label>Terrain agricole</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  
+  <element name="gmd:sol" id="1043.0">
+    <label>Sol</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  
+  <element name="gmd:MD_pratiqueagricole" id="1044.0">
+    <label>Pratique agricole</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+ 
+  <element name="gmd:pratiqueagricole" id="1045.0">
+    <label>Pratique agricole</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+ 
+  <element name="gmd:systemeproduction" id="1046.0">
+    <label>Système de production agricole</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+ 
+  <element name="gmd:lutte" id="1047.0">
+    <label>Lutte contre les ravageurs</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+ 
+  <element name="gmd:irrigation" id="1048.0">
+    <label>Irrigation</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  
+
+  <element name="gmd:fertilisants" id="1049.0">
+    <label>Fertilisants</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:vuepanaromique" id="1050.0">
+    <label>Vue panaromique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:territoire" id="1051.0">
+    <label>Territoire aménagé</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:aire" id="1052.0">
+    <label>Aire protégée</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:faune" id="1053.0">
+    <label>Faune</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_faune" id="1054.0">
+    <label>Faune</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:mammiferes" id="1055.0">
+    <label>Mammifères</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:oiseaux" id="1056.0">
+    <label>Oiseaux</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:poissons" id="1057.0">
+    <label>Poissons</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:flore" id="1058.0">
+    <label>Flore</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:endemique" id="1059.0">
+    <label>Espèce endémique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:menacee" id="1060.0">
+    <label>Espèce menacée</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:foret" id="1061.0">
+    <label>Forêt</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:corridor" id="1062.0">
+    <label>Corridor écologique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:habitat" id="1062.0">
+    <label>Habitat naturel</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:associations" id="1063.0">
+    <label>Associations</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:savoir" id="1064.0">
+    <label>Savoir local</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:MD_associations" id="1065.0">
+    <label>Associations</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:enviro" id="1066.0">
+    <label>Environnementale</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:scoutisme" id="1067.0">
+    <label>Scoutisme</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:sante" id="1068.0">
+    <label>Santé</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:fondation" id="1069.0">
+    <label>Fondation</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:sport" id="1070.0">
+    <label>Sport</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:musee" id="1071.0">
+    <label>Musée</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:biblio" id="1072.0">
+    <label>Bibliothèque</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:vestige" id="1073.0">
+    <label>Vestige</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:construction" id="1074.0">
+    <label>Construction historique</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_Infos" id="1075.0">
+    <label>Informations générales</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:municipalite" id="1076.0">
+    <label>Informations générales sur la municipalité</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_municipalite" id="1077.0">
+    <label>Informations générales sur la municipalité</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:zonage" id="1078.0">
+    <label>Zonage</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:plan" id="1079.0">
+    <label>Plan ou un schéma directeur</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:etudes" id="1080.0">
+    <label>Etudes disponibles</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_etudes" id="1081.0">
+    <label>Etudes disponibles</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:geologiques" id="1082.0">
+    <label>Géologiques</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:hydrogeologiques" id="1083.0">
+    <label>Hydrogéologiques</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:ecologiques" id="1084.0">
+    <label>Ecologiques</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:autres" id="1085.0">
+    <label>Autres</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:population" id="1086.0">
+    <label>Population</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_population" id="1087.0">
+    <label>Population</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:activites" id="1088.0">
+    <label>Les activites principales</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:MD_activites" id="1089.0">
+    <label>Les activités principales</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:principales" id="1090.0">
+    <label>Les principales activités</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:ecoles" id="1091.0">
+    <label>Nombres d'écoles</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+  <element name="gmd:restaurants" id="1092.0">
+    <label>Restaurants</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:hotels" id="1093.0">
+    <label>Hôtels et complexes touristiques</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:industries" id="1094.0">
+    <label>Industries présentes</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:remarques" id="1096.0">
+    <label>Remarques</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:dernier" id="1095.0">
+    <label>Dernier recensement / Habitant</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:hiver" id="1097.0">
+    <label>Habitants Hiver</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:ete" id="1098.0">
+    <label>Habitants Eté</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:estimation" id="1099.0">
+    <label>Estimation de la population par tranches d'âge</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+  <element name="gmd:MD_PatrimoineA" id="1099.0">
+    <label>Patrimoine Culturel</label>
+    <abbrLabel></abbrLabel>
+    <description>
+    </description>
+  </element>
+
+
+
+
+
+
+
+
 </labels>

@@ -114,8 +114,8 @@
       <citation>
         <CI_Citation>
           <title>
-            <gco:CharacterString>Template for Vector data in ISO19139
-              (preferred!)
+            <gco:CharacterString>Template for Vector data Diane 2020 (ISO19139)
+              
             </gco:CharacterString>
           </title>
           <date>
@@ -329,6 +329,7 @@
       </transferOptions>
     </MD_Distribution>
   </distributionInfo>
+
   <dataQualityInfo>
     <DQ_DataQuality>
       <scope>

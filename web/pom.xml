@@ -579,6 +579,7 @@
       <version>${gn.schemas.version}</version>
     </dependency>
 
+
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>wfsfeature-harvester</artifactId>

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" targetNamespace="http://www.isotc211.org/2005/gmd" elementFormDefault="qualified" version="2012-07-13">
+	<!-- ================================= Annotation ================================ -->
+	<xs:annotation>
+		<xs:documentation>Geographic MetaData (GMD) extensible markup language is a component of the XML Schema Implementation of Geographic Information Metadata documented in ISO/TS 19139:2007. GMD includes all the definitions of http://www.isotc211.org/2005/gmd namespace. The root document of this namespace is the file gmd.xsd. This distribution.xsd schema implements the UML conceptual schema defined in A.2.10 of ISO 19115:2003. It contains the implementation of the following classes: MD_Medium, MD_DigitalTransferOptions, MD_StandardOrderProcess, MD_Distributor, MD_Distribution, MD_Format, MD_MediumFormatCode, MD_MediumNameCode.</xs:documentation>
+	</xs:annotation>
+	<!-- ================================== Imports ================================== -->
+	<xs:import namespace="http://www.isotc211.org/2005/gco" schemaLocation="../gco/gco.xsd"/>
+	<xs:include schemaLocation="gmd.xsd"/>
+	<xs:include schemaLocation="citation.xsd"/>
+	<!-- ########################################################################### -->
+	<!-- ########################################################################### -->
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_HydrogeologieA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="sourcenaturelle" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="riviere" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="lac" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="etang" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+
+					<xs:element name="marecageuse" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="puits" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_HydrogeologieA" type="gmd:MD_HydrogeologieA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_HydrogeologieA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_HydrogeologieA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_GeologieA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="fossile" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="gouffre" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="grotte" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="montagne" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="colline" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="structuregeo" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="phenomenegeo" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="faille" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_GeologieA" type="gmd:MD_GeologieA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_GeologieA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_GeologieA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_AgricultureA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="terrainagricole" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="sol" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="pratiqueagricole" type="gmd:MD_pratiqueagricole_PropertyType" minOccurs="0" />
+
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_AgricultureA" type="gmd:MD_AgricultureA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_AgricultureA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_AgricultureA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_pratiqueagricole_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="systemeproduction" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="lutte" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="irrigation" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="fertilisants" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_pratiqueagricole" type="gmd:MD_pratiqueagricole_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_pratiqueagricole_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_pratiqueagricole"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_PaysageA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="vuepanaromique" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="territoire" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="aire" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_PaysageA" type="gmd:MD_PaysageA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_PaysageA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_PaysageA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_EcologieA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="faune" type="gmd:MD_faune_PropertyType" minOccurs="0" />
+					<xs:element name="flore" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="endemique" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="menacee" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="foret" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="corridor" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="habitat" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_EcologieA" type="gmd:MD_EcologieA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_EcologieA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_EcologieA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_Social_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="associations" type="gmd:MD_associations_PropertyType" minOccurs="0" />
+					<xs:element name="savoir" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Social" type="gmd:MD_Social_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Social_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_Social"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_associations_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="enviro" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="scoutisme" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="sante" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="fondation" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="sport" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					
+					
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_associations" type="gmd:MD_associations_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_associations_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_associations"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_faune_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="mammiferes" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="oiseaux" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="poissons" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_faune" type="gmd:MD_faune_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_faune_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_faune"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_PatrimoineA_Type">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="musee" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="biblio" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="vestige" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="construction" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded"/>					
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_PatrimoineA" type="gmd:MD_PatrimoineA_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_PatrimoineA_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_PatrimoineA"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	<!-- =========================================================================== -->
+	<xs:complexType name="MD_Atouts_Type">
+		<xs:annotation>
+			<xs:documentation>Informations sur les atouts</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="gco:AbstractObject_Type">
+				<xs:sequence>
+					<xs:element name="geologieA" type="gmd:MD_GeologieA_PropertyType" minOccurs="0" />
+					<xs:element name="hydrogeologieA" type="gmd:MD_HydrogeologieA_PropertyType" minOccurs="0" />
+					<xs:element name="agricultureA" type="gmd:MD_AgricultureA_PropertyType" minOccurs="0" />
+					<xs:element name="paysageA" type="gmd:MD_PaysageA_PropertyType" minOccurs="0" />
+					<xs:element name="ecologieA" type="gmd:MD_EcologieA_PropertyType" minOccurs="0" />
+					<xs:element name="social" type="gmd:MD_Social_PropertyType" minOccurs="0" />
+					<xs:element name="patrimoineA" type="gmd:MD_PatrimoineA_PropertyType" minOccurs="0" />
+					<xs:element name="projets" type="gco:CharacterString_PropertyType" minOccurs="0" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ........................................................................ -->
+	<xs:element name="MD_Atouts" type="gmd:MD_Atouts_Type"/>
+	<!-- ........................................................................ -->
+	<xs:complexType name="MD_Atouts_PropertyType">
+		<xs:sequence minOccurs="0">
+			<xs:element ref="gmd:MD_Atouts"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="gco:ObjectReference"/>
+		<xs:attribute ref="gco:nilReason"/>
+	</xs:complexType>
+	<!-- =========================================================================== -->
+
+	
+</xs:schema>
