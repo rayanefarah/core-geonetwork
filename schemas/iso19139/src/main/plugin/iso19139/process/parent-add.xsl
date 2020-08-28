@@ -67,7 +67,6 @@ Stylesheet used to update metadata adding a reference to a parent record.
         gmd:dataQualityInfo|
         gmd:portrayalCatalogueInfo|
         gmd:metadataConstraints|
-        gmd:metadataMenaces|
         gmd:applicationSchemaInfo|
         gmd:metadataMaintenance|
         gmd:series|

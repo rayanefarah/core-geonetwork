@@ -88,13 +88,6 @@
               </label>
             </li>
             <li class="arrow">
-              <input type="checkbox" name="gmd-metadataMenaces" id="metadataMenaces"/>
-              <label for="metadataMenaces">
-                <xsl:value-of
-                  select="/root/gui/schemas/iso19139/labels/element[@name='gmd:metadataMenaces']/label"/>
-              </label>
-            </li>
-            <li class="arrow">
               <input type="checkbox" name="gmd-spatialRepresentationInfo"
                      id="spatialRepresentationInfo"/>
               <label for="spatialRepresentationInfo">

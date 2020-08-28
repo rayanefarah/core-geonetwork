@@ -491,11 +491,6 @@
     <abbrLabel>Metadata</abbrLabel>
     <description>Root entity which defines metadata about a resource or resources</description>
   </element>
-  <element name="gmd:D_Data" id="1.0">
-    <label>Diane data</label>
-    <abbrLabel>Metadata</abbrLabel>
-    <description>Root entity which defines data about a resource or resources</description>
-  </element>
   <element name="gmd:MD_MetadataExtensionInformation" id="303.0">
     <description>Information describing metadata extensions</description>
     <label>Metadata Extension Information</label>
@@ -899,7 +894,7 @@
   </element>
   <element name="gmd:dataQualityInfo" id="18.0">
     <label>Atouts Environnementaux</label>
-    <abbrLabel></abbrLabel>
+    <abbrLabel>Atouts</abbrLabel>
     <description></description>
   </element>
   <element name="gmd:dataSetURI" id="11.1">
@@ -1153,7 +1148,7 @@
     <description>
     </description>
     <label>Informations générales</label>
-    <abbrLabel></abbrLabel>
+    <abbrLabel>Infos</abbrLabel>
   </element>
   <element name="gmd:distributionOrderProcess" id="281.0">
     <label>Distribution / Order Process</label>
@@ -2510,7 +2505,7 @@
   </element>
   <element name="gmd:spatialRepresentationInfo" id="12.0">
     <label>Menaces environnementales</label>
-    <abbrLabel></abbrLabel>
+    <abbrLabel>Menaces</abbrLabel>
     <description></description>
   </element>
   <element name="gmd:spatialRepresentationType" id="37.0">
